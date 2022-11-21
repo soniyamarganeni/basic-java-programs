@@ -1,0 +1,46 @@
+Pattern V
+Write a Python program to print the given pattern from user-defined values(dynamic values).
+
+Sample input 1:
+5
+Sample output 1:
+    *
+   **
+  ***
+ ****
+*****
+
+Sample input 2:
+8
+Sample output 2:
+       *
+      **
+     ***
+    ****
+   *****
+  ******
+ *******
+********
+
+import java.util.*;
+public class Pattern5
+{
+    public static void main(String[] args)
+    {
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int i,j;
+       for(i=0;i<n;i++)
+       {
+           for(j=n-i;j>1;j--)
+           {
+               System.out.print(" ");
+           }
+           for(j=0;j<=i;j++)
+           {
+               System.out.print("*");
+           }
+           System.out.println();
+       }//Write your code
+    }
+}
