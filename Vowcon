@@ -1,0 +1,36 @@
+Vowel Or Consonants
+Write a program to check whether the given character is vowel or consonant or Not an alphabet.
+
+Input format: 
+
+The input consist of a character 
+
+Output format: 
+
+The output consists of a below-given string “Vowel” / “Consonant” / “Not an alphabet”
+
+Sample Input: 
+
+a 
+
+Sample Output: 
+
+Vowel
+
+ program:
+ 
+ import java.util.*;
+public class Vowcons
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        char a=sc.next().charAt(0);
+        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a=='A'||a=='E'||a=='I'||a=='O'||a=='U')
+        System.out.println("Vowel");
+        else if((a>='a'&&a<='z')||(a>='A'&&a<='Z'))
+        System.out.println("Consonant");
+        else
+        System.out.println("Not an alphabet");
+    }
+}
