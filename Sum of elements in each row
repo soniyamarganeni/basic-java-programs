@@ -1,0 +1,48 @@
+Sum of elements in each row
+Write a  program to find the sum of elements in each row:
+
+INPUT & OUTPUT FORMAT:
+
+Input consists of 2 integers and 1 2D-array. 
+
+Integers correspond to the size of rows and columns.
+
+Output consists of 3 integers.
+
+Output consists of the values which is the sum of all the rows.
+
+Sample Input:
+
+3
+3
+1 2 3
+7 3 1
+7 4 1
+
+Sample Output:
+6
+11
+12
+
+import java.util.*;
+public class Sumofelements
+{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int n[][]=new int[a][b];
+        int i,j;
+        for(i=0;i<a;i++)
+            for(j=0;j<b;j++)
+                n[i][j]=sc.nextInt();
+        for( i=0;i<a;i++){
+            for( j=0;j<b;j++){
+                n[0][0]=n[i][j];
+            }
+               System.out.printf("%d ",n[0][0]);
+       System.out.println();
+        }       
+        
+    }
+}
