@@ -1,0 +1,31 @@
+Inheritance
+class Dog{
+    int k=10000;
+    public static void dog1(){
+        System.out.println("Barking");
+        System.out.println("Eating");
+    }
+}
+class Cat extends Dog{
+    public static void cat1(){
+        System.out.println("meowwwing");
+        System.out.println("Eating");
+        System.out.println("Sleeping");
+    }
+}
+class Fish extends Cat{
+    public static void fish1(){
+        System.out.println("Swimming");
+        System.out.println("Eating");
+        System.out.println("palying");
+    }
+}
+public class Inherit extends Fish{
+    public static void main(String args[]){
+        Fish a=new Fish();
+        a.dog1();
+        a.cat1();
+        a.fish1();
+        System.out.println(a.k);
+    }
+}
