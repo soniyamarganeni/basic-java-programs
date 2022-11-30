@@ -1,0 +1,45 @@
+Bank Transaction- L2
+Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
+
+D 100
+
+W 200
+
+D means deposit while W means withdrawal.
+
+Sample Input: 
+
+D 300
+
+D 300
+
+W 200
+
+D 100
+
+Sample output:
+
+500
+import java.util.*;
+public class bank{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int c=sc.nextInt();
+        int i,k=0;
+        for(i=0;i<c;i++) 
+        {
+        char a=sc.next().charAt(0);
+        int b=sc.nextInt();
+        if(a=='D')
+        k=k+b;
+        else if(a=='W')
+        k=k-b;
+        else 
+        System.out.println();
+    }
+    System.out.println(k);
+        
+    }
+}
+    
