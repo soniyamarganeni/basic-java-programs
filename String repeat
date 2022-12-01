@@ -1,0 +1,39 @@
+String repeat
+Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+INPUT 1:
+
+6
+
+K
+
+OUTPUT 1:
+
+KKKKKK
+
+INPUT 2:
+
+4
+
+HELLO
+
+OUTPUT 2:
+
+HELLOHELLOHELLOHELLO
+import java.util.*;
+class repeat{
+  static String repeatStr(int repeat, String string) {
+    String s1="";
+    for(int i=1;i<=repeat;i++)
+    {
+        s1=s1+string;
+    }//write your logic here
+    return s1;
+  }
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+String b=sc.next();
+System.out.println(repeatStr(a,b));
+}
+}
