@@ -1,0 +1,72 @@
+Student details II
+Write a Java program to create a class to get n number of student values as name, id, dept.
+
+Hint: Create a new class with name as Stud, then declare required data members, then write a constructor to initialize the values and write a display() function to print the values. 
+
+Sample input:
+
+Mahes
+
+1
+
+ECE
+
+Rahul
+
+4
+
+Mech
+
+Sample output:
+
+Students details:
+
+Students Name:
+
+Mahes
+
+Rahul
+
+Students ID:
+
+1
+
+4
+
+Students Departments:
+
+ECE
+import java.util.*;
+public class Student2 extends Stud
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Stud st=new Stud();
+        st.Stud();
+        st.display();
+    }
+}
+class Stud
+{
+    Scanner sc=new Scanner(System.in);
+    public String s,d,s1,d1;
+    public int a,a1;
+    void Stud()
+    { 
+         s=sc.nextLine();
+         a=sc.nextInt();
+         d=sc.next();
+         s1=sc.next();
+         a1=sc.nextInt();
+         d1=sc.next();
+    }
+    void display()
+    {
+        //Stud st=new Stud();
+        System.out.println("Students details:");
+        System.out.println("Students Name: \n"+s+"\n"+s1);
+        System.out.println("Students ID:\n"+a+"\n"+a1);
+        System.out.println("Students Departments:\n"+d+"\n"+d1);
+    }
+}
