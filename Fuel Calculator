@@ -1,0 +1,51 @@
+Fuel Calculator
+
+In this Question you will have to write a function that takes litres and pricePerLitre (in dollar) as arguments.
+
+Purchases of 2 or more litres get a discount of 5 cents per litre, purchases of 4 or more litres get a discount of 10 cents per litre, and so on every two litres, up to a maximum discount of 25 cents per litre. But total discount per litre cannot be more than 25 cents. Return the total cost rounded to 2 decimal places. Also you can guess that there will not be negative or non-numeric inputs.
+
+Note:
+1 Dollar = 100 Cents
+
+INPUT 1:
+
+5
+
+1.23
+
+OUTPUT 1:
+
+5.65
+
+INPUT 2:
+
+8
+
+2.5
+
+OUTPUT 2:
+
+18.40
+import java.util.*;
+public class Fuel{
+  public static double fuelPrice(int litres, double pricePerLiter) {
+      double p=0;
+      int n=(int)litres/2;
+      if(litres>=2&&litres<4)
+      {
+         p= (pricePerLiter*litres)-(litres*0.05);
+      }
+      else  if(litres>=4)
+      {
+         p= (pricePerLiter*litres)-(n*0.25);
+      }
+    //write your logic here
+    return p;
+  }
+
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+double b=sc.nextDouble();
+System.out.printf("%.2f",fuelPrice(a,b));
+}}
