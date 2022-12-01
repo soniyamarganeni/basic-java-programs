@@ -1,0 +1,63 @@
+1-D array Question-2
+Write a program that creates integer array of 10 elements, accepts values of arrays and Find Sum, Average, Min, Max.
+Sample Input: 
+
+Enter 10 array elements
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Sample Output
+
+Array: 
+
+sum: 55
+
+min: 1
+
+max: 10
+
+average : 5.5
+import java.util.*;
+public class Summinmax
+{
+    public static void main(String args[])
+    {
+     Scanner sc=new Scanner(System.in);
+     int a[]=new int[10];
+     System.out.println("Enter 10 array elements");
+     for(int i=0;i<10;i++)
+     {
+         a[i]=sc.nextInt();
+     }
+      System.out.println("Array");
+      int sum=0;
+     for(int j=0;j<10;j++)
+     {
+         sum=sum+a[j];
+     }
+     System.out.println("sum: "+sum);
+     Arrays.sort(a);
+     System.out.println("min: "+a[0]);
+     System.out.println("max: "+a[9]);
+     float avg=(float)sum/10;
+     System.out.printf("average : %.1f",avg);
+    }
+}//code here
