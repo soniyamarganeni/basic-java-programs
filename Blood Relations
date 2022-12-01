@@ -1,0 +1,34 @@
+Blood Relations
+There were two friends playing in the park. They get bored by playing the same games. The two friends just absorbing the greenish surrounding. Joe said to ram see that tree, By my grandfather's guidance. That was planted on my 10th birthday. At that time, I named it as "Dora". The nearest tree was planted by my father's guidance on my 15th birthday. I named it as "Bujji".That was funny!!! Slowly, they started talking about nostalgic memories. Ram wants to know the names of her parent's names, grandparents' names. Can you help him to write the code in java program?
+
+Input and Output Format
+
+First line consist of son name.
+
+second line consist of father name.
+
+third line consist of grand parent name.
+import java.util.*;
+public class Relations
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the son name:");
+        String s=sc.next();
+        System.out.println("Enter the father name:");
+        String s1=sc.next();
+        System.out.println("Enter the grand parent name:");
+        String s1=sc.next();
+        display(s,s1,s2);
+    }
+}
+class Blood
+{
+    public static void display(String s.String s1,String s2)
+    {
+         System.out.println("Son name: "+s);
+        System.out.println("Father name:"+s1);
+        System.out.println("Grand parent name:"+s2);
+    }
+}
