@@ -1,0 +1,46 @@
+Wilson primes
+Wilson primes satisfy the following condition. Let P represent a prime number.
+
+Then,
+
+((P-1)! + 1) / (P * P)
+should give a whole number.
+
+Your task is to create a function that returns true if the given number is a Wilson prime.
+
+
+INPUT 1:
+5
+OUTPUT 1:
+true
+INPUT 2:
+1
+OUTPUT 2:
+false
+import java.util.*;
+public class Wilson{
+  public static boolean am_i_wilson(double n) {
+    //write your logic here((P-1)! + 1) / (P * P)
+    double p=1;
+    double i;
+    for(i=n-1;i>=1;i--)
+    {
+        p=p*i;
+    }
+    //System.out.println(p);
+    double k=(p+1)/(n*n);
+    if(k==1&&n!=1)
+    {
+        return true;
+    }
+    else{
+        
+    
+    return false;
+  }
+  }
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+double a=sc.nextDouble();
+System.out.println(am_i_wilson(a));
+}}
