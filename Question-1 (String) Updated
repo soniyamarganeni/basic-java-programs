@@ -1,0 +1,46 @@
+Question-1 (String) Updated
+Coding Question 1: Based on String
+Write a program to print the following output: 
+
+Input: a1b2c3
+Output: abbccc
+Caution: Don't use inbuilt functions
+Explanation:
+
+After we have the number 1 so a repeats one time = a
+After b we have the number 2 so it repeats two times = bb
+After c we have the number 3 so it repeats three times = ccc
+Final Output: abbccc
+Algorithm:
+
+Start the Program
+Get the input as a single string
+Loop through the entire string to find the numbers
+After finding the number, Repeat the previous character the same number of times
+For example a4 ( So you find the number 4 and print a 4 times)
+Follow step 3,4 for the entire string
+End the Program
+import java.util.*;
+public class Program
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int k=s.length();
+        for(int i=1;i<k;i++)
+        {
+            char c1=s.charAt(i-1);
+            char c=s.charAt(i);
+            char a=c1;
+            if(c>'0' && c<'9')
+            {
+             int num=c-'0';
+             for(int j=0;j<num;j++)
+             {
+                 System.out.printf("%c",a);
+             }
+            }
+        }
+    }
+}
