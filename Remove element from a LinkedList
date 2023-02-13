@@ -1,0 +1,24 @@
+Write a java program using ArrayList to display the following output:
+
+LinkedList: [Java, Python, JavaScript, Kotlin]
+Removed Element: Python
+New LinkedList: [Java, JavaScript, Kotlin]
+
+//Code here
+import java.util.*;//code here
+public class collection
+{
+    public static void main(String args[])
+    {
+        LinkedList<String> a=new LinkedList<String>();
+        a.add("Java");
+        a.add("Python");
+        a.add("JavaScript");
+        a.add("Kotlin");
+        System.out.println("Linkedlist: "+a);
+        System.out.println("Removed Element: "+a.get(1));
+        a.remove(1);
+        System.out.println("New LinkedList: "+a);
+    }
+}
+//Code here
