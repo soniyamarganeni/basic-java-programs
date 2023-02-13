@@ -1,0 +1,20 @@
+Write a java program using ArrayList to display the following output:
+
+Element at index 2: Cat
+
+Vector: Dog, Horse, Cat,
+//Code here
+import java.util.*;//code here
+public class collection
+{
+    public static void main(String args[])
+    {
+        Vector<String> a=new Vector<String>();
+        a.add("Dog");
+        a.add("Horse");
+        a.add("Cat");
+        System.out.println("Element at index 2:"+a.get(2));
+        System.out.println("Vector: "+a);
+    }
+}
+//Code here
