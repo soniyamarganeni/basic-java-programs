@@ -1,0 +1,27 @@
+Write a java program using the collection to display the following output:
+
+Methods: 
+
+To iterate over the elements of a priority queue, we can use the iterator() method. In order to use this method, we must import the java.util.Iterator package. 
+
+
+Sample Output: 
+PriorityQueue using iterator(): 1, 4, 2,
+import java.io.*;
+import java.util.*;
+import java.util.Iterator;
+public class Main
+{
+    public static void main(String args[])
+    {
+        PriorityQueue<Integer> p=new PriorityQueue<Integer>();
+        p.add(1);
+        p.add(4);
+        p.add(2);
+        Iterator<Integer> i=p.iterator();
+        while(i.hasNext())
+        {
+            System.out.print(i.next()+",");
+        }
+    }
+}
