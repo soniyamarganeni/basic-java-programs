@@ -1,0 +1,20 @@
+Write a java program using ArrayList to display the following output:
+
+LinkedList: [Java, Python, JavaScript, Java]
+Updated LinkedList: [Java, Python, JavaScript, Kotlin]
+import java.util.*;//code here
+public class collection
+{
+    public static void main(String args[])
+    {
+        LinkedList<String> a=new LinkedList<String>();
+        a.add("Java");
+        a.add("Python");
+        a.add("JavaScript");
+        a.add("Java");
+        System.out.println("Linkedlist: "+a);
+        a.set(3,"Kotlin");
+        System.out.println("Updated LinkedList: "+a);
+    }
+}
+//Code here
