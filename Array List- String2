@@ -1,0 +1,16 @@
+Write a program using ArrayList to print the follwoing output:
+ArrayList: [Cat, Dog, Cow]
+Element at index 1: Dog
+import java.util.*;//code here
+public class Array2
+{
+    public static void main(String args[])
+    {
+        ArrayList<String> a=new ArrayList<String>();
+        a.add("Cat");
+        a.add("Dog");
+        a.add("Cow");
+        System.out.println("ArrayList: "+a);
+        System.out.println("Element at index 1: "+a.get(1));
+    }
+}
