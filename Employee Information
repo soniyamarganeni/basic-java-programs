@@ -1,0 +1,82 @@
+Write a java program to read and print employee information using multiple inheritance.
+
+Sample Input
+
+Enter employee's basic info:                                                                                                                    
+
+Enter Name: Raju                                                                                                                                
+
+Enter Emp. Id: 23                                                                                                                               
+
+Enter Gender: M                                                                                                                                 
+
+Enter employee's department info:                                                                                                               
+
+Enter Department Name: Product Development                                                                                                      
+
+Enter assigned work: PPT WORk                                                                                                                   
+
+Enter time in hours to complete work: 24
+
+Sample Output:
+
+Employee's Information is:                                                                                                                      
+
+Basic Information...:                                                                                                                           
+
+Name: Raju                                                                                                                                      
+
+Employee ID: 23                                                                                                                                 
+
+Gender: M                                                                                                                                       
+
+                                                                                                                                                
+
+Department Information...:                                                                                                                      
+
+Department Name: Product Development                                                                                                            
+
+Assigned Work: PPT WORk                                                                                                                         
+
+Time to complete work: 24
+import java.util.*;
+public class Employee extends Stud
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter employee's basic info: ");
+        System.out.println("Enter Name: ");
+        String s=sc.next();
+        System.out.println("Enter Emp. Id: ");
+        int a=sc.nextInt();
+        System.out.println("Enter Gender: ");
+        char c=sc.next().charAt(0);
+        System.out.println();
+        System.out.println("Enter employee's department info:");
+        System.out.println("Enter Department Name: ");
+        String s1=sc.next();
+        System.out.println("Enter assigned work: ");
+        String s2=sc.next();
+        System.out.println("Enter time in hours to complete work: ");
+        int n2=sc.nextInt();
+        marks(s,a,c,s1,s2,n2);
+    }
+}
+class Stud
+{
+    public static void marks(String s,int a,char c,String s1,String s2,int n2)
+    {
+        System.out.println("Employee's Information is: ");
+         System.out.println("Basic Information...:");
+        System.out.println("Name: "+s);
+        System.out.println("Employee ID: "+a);
+        System.out.println("Gender: "+c);
+        System.out.println();
+        System.out.println("Department Information...:");
+        System.out.println("Department Name: "+s1);
+        System.out.println("Assigned work: "+s2);
+        System.out.println("Time to complete work: "+n2);
+      
+    }
+}
