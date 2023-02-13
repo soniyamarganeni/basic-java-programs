@@ -1,0 +1,20 @@
+Write a java program using ArrayList to display the following output:
+
+LinkedList: [Dog, Cat, Cow]
+Updated LinkedList: [Dog, Horse, Cat, Cow]
+//Code here
+//code here
+import java.util.*;//code here
+public class collection
+{
+    public static void main(String args[])
+    {
+        LinkedList<String> a=new LinkedList<String>();
+         a.add("Cow");
+        a.add("Cat");
+        a.add("Dog");
+        System.out.println("Linkedlist: "+a);
+        a.add(1,"Horse");
+        System.out.println("Updated LinkedList: "+a);
+    }
+}
