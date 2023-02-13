@@ -1,0 +1,62 @@
+Write a Java program to find out the payroll system using single inheritance.
+
+Input and Output Format
+
+Refer sample input and output.
+
+Sample Input
+
+Enter the number of employee:1                                                                                                                  
+
+Enter the employee number:1234                                                                                                                  
+
+Enter the employee name:RAJ                                                                                                                     
+
+Enter the designation:Software                                                                                                                  
+
+Enter the basic pay:12000                                                                                                                       
+
+Enter the Humen Resource Allowance:5000                                                                                                         
+
+Enter the Dearness Allowance :2000                                                                                                              
+
+Enter the Profitablity Fund:5000                                                                                                                                          
+
+Sample Output
+
+e_no     e_name  des      bp       hra      da       pf       np                                                                                     
+
+1234    RAJ      Software        12000   5000    2000    5000    14000
+import java.util.*;
+public class payroll extends Stud
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of employee:");
+        int n=sc.nextInt();
+        System.out.println("Enter the employee number:");
+        int n1=sc.nextInt();
+        System.out.println("Enter the employee name:");
+        String s=sc.next();
+        System.out.println("Enter the designation:");
+        String s1=sc.next();
+        System.out.println("Enter the basic pay:");
+        int n2=sc.nextInt();
+        System.out.println("Enter the Humen Resource Allowance:");
+        int n3=sc.nextInt();
+        System.out.println("Enter the Dearness Allowance :");
+        int n4=sc.nextInt();
+        System.out.println("Enter the Profitablity Fund:");
+        int n5=sc.nextInt();
+        details(n,n1,s,s1,n2,n3,n4,n5);
+    }
+}
+class Stud
+{
+    public static void details(int n,int n1,String s,String s1,int n2,int n3,int n4,int n5)
+    {
+        System.out.println("e_no     e_name  des      bp       hra      da       pf       np ");
+        System.out.println(n1+"     "+s+"   "+s1+"  "+n2+"  "+n3+"   "+n4+"  "+n5+"   "+(n2+n4));
+    }
+}
