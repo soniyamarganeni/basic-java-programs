@@ -1,0 +1,61 @@
+Write a Java Program to Overriding member functions using Inheritance
+Input and Output Format
+
+Refer sample input and output
+
+Sample Input
+
+Enter the first name = Ramu                                                                                                                     
+
+Enter the identity number = 12                                                                                                                 
+
+Enter the age = 25                                                                                                                                                                                                                   
+
+Enter the salary = 50000   
+
+Enter the designation of the Engineer: Content                                                                                                                                                           
+
+Sample Output
+
+Displaying the particulars of the Engineer                                                                                                      
+
+Name = Ramu                                                                                                                                     
+
+Identity Number = 12                                                                                                                            
+
+Age = 25                                                                                                                                        
+
+Salary = 50000                                                                                                                                  
+
+Designition = Content
+import java.util.*;
+public class Eng extends Stud
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first name = ");
+        String s=sc.next();
+        System.out.println("Enter the identity number = ");
+        int n=sc.nextInt();
+        System.out.println("Enter the age = ");
+        int n1=sc.nextInt();
+        System.out.println("Enter the salary = ");
+        int n2=sc.nextInt();
+        System.out.println("Enter the designation of the Engineer:");
+        String s1=sc.next();
+        details(s,n,n1,n2,s1);
+    }
+}
+class Stud
+{
+    public static void details(String s,int n,int n1,int n2,String s1)
+    {
+        System.out.println("Displaying the particulars of the Engineer");
+        System.out.println("Name = "+s);
+        System.out.println("Identity Number = "+n);
+        System.out.println("Age = "+n1);
+        System.out.println("Salary = "+n2);
+        System.out.println("Designition = "+s1);
+    }
+}
