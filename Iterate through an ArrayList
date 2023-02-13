@@ -1,0 +1,31 @@
+Write a java program using ArrayList to display the following output:
+
+ArrayList: [Cow, Cat, Dog]
+Accessing individual elements:  
+Cow, Cat, Dog,
+//Code here
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.*;
+import java.io.*;
+public class collection
+{
+    public static void main(String args[])
+    {
+        ArrayList<String> a=new ArrayList<String>();
+        a.add("Cow");
+        a.add("Cat");
+        a.add("Dog");
+        System.out.println("ArrayList: "+a);
+        String[] s=new String[a.size()];
+        for(int i=0;i<a.size();i++)
+        {
+            s[i]=a.get(i);
+        }
+        System.out.println("Accessing individual elements:  ");
+        for( String name: s)
+        {
+            System.out.print(name+",");
+        }
+    }
+}
