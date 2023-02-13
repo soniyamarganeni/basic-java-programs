@@ -1,0 +1,19 @@
+Write a java program using ArrayList to display the following output:
+
+Vector: [Dog, Horse, Cat]
+New Vector: [Crocodile, Dog, Horse, Cat]
+import java.util.*;//code here
+public class collection
+{
+    public static void main(String args[])
+    {
+        Vector<String> a=new Vector<String>();
+        a.add("Dog");
+        a.add("Horse");
+        a.add("Cat");
+        System.out.println("Vector: "+a);
+        a.add(0,"Crocodile");
+        System.out.println("New Vector: "+a);
+    }
+}
+//Code here
