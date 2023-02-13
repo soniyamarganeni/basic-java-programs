@@ -1,0 +1,27 @@
+Write a java program using ArrayList to display the following output:
+
+ArrayList: [Dog, Cat, Horse]
+Updated ArrayList: [Dog, Cat]
+Removed Element: Horse
+//Code here
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.*;
+public class collection
+{
+	public static void main(String[] args) {
+	    ArrayList<String> a=new ArrayList<String>();//non generic object....
+	    a.add("Dog");
+	    a.add("Cat");
+	    a.add("Horse");
+	    System.out.println("ArrayList: "+a);
+	     String[] str = new String[a.size()];
+ 
+        for (int i = 0; i < a.size(); i++) {
+            str[i] = a.get(i);
+        }
+	    a.remove(2);
+	    System.out.println("Updated ArrayList: "+a);
+	    System.out.println("Removed Element: "+str[2]);
+	}
+}
