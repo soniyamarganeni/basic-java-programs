@@ -1,0 +1,131 @@
+The constructor is a special method that has the same name as its same class name. Default Constructor is a constructor that has no arguments or if it has parameters it will have default values. Create a class Main with the following member variables int length int breadth int height int radius In Main class, get the details of the values of all variables and pass it to the shape class Create a class Shape with the following member variables int length int breadth int height int radius The values are passed from the Main class as parameters to the constructors in Shape class. In Shape class, create four constructors. The first constructor is the default constructor.Shape(){} The second constructor is for the cube, which receives length, breadth, and height as arguments. Shape(int lenght,int breadth,int height){constructor body} The third constructor is for the sphere, which receives radius as arguments. Shape(int radius){constructor body} The fourth constructor is for cylinder, which receives radius and height as arguments. Shape(int radius, int height){Constructor body} Include three methods in Shape class namely public float calculateAreaOfCylinder() public float calculateAreaOfSphere() public Integer calculateAreaOfCube() to calculate the area of each shapes.
+
+Sample Input and Output 1 :
+
+1.Cube
+
+2.Sphere
+
+3.Cylinder
+
+Enter the choice
+
+1
+
+length
+
+10
+
+breadth
+
+20
+
+height
+
+30
+
+Area of Cube is 6000
+
+
+
+Sample Input and Output 2:
+
+1.Cube
+
+2.Sphere
+
+3.Cylinder
+
+Enter the choice
+
+2
+
+radius
+
+10
+
+Area of Sphere is 4186.67
+
+
+
+Sample Input and Output 3:
+
+1.Cube
+
+2.Sphere
+
+3.Cylinder
+
+Enter the choice
+
+3
+
+radius
+
+10
+
+height
+
+5
+
+Area of Cylinders is 1570.0
+import java.io.*;
+import java.util.*;
+public class Constructor
+{
+    public static void main(String args[])
+    {
+        Con k=new Con();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("1.Cube\n2.Sphere\n3.Cylinder");
+        System.out.println("Enter the choice");
+        int c=sc.nextInt();
+        switch(c)
+        {
+            case 1:
+                {
+                    System.out.println("length");
+                    int l=sc.nextInt();
+                    System.out.println("breadth");
+                    int b=sc.nextInt();
+                    System.out.println("height");
+                    int h=sc.nextInt();
+                    System.out.println("Area of Cube is "+k.Con(l,b,h));
+                    break;
+                }
+            case 2:
+                {
+                    System.out.println("radius");
+                    int r=sc.nextInt();
+                    System.out.println("Area of Sphere is "+k.Con(r));
+                    break;
+                }
+            case 3:
+                {
+                    System.out.println("radius");
+                    int r=sc.nextInt();
+                    System.out.println("height");
+                    int h=sc.nextInt();
+                    System.out.println("Area of Cylinders is "+k.Con(r,h));
+                    break;
+                }
+        }
+        
+    }
+}
+class Con
+{
+   // const float pi=3.14;
+    int Con(int l,int b,int h)
+    {
+        return l*b*h;
+    }
+     double Con(int r)
+    {
+        return 4*3.14*r*r;
+    }
+     double Con(int r,int h)
+    {
+        return 2*3.14*r*(r+h);
+    }
+}
